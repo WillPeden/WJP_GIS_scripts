@@ -1,19 +1,19 @@
 
 ##################################################
-## Project: Handy GIS scripts
+## Project: Handy GIS script
 ## Script purpose: kml files to shapefiles
 ## Date: 10/07/2019
 ## Author: William J Peden
 ##################################################
 
 #  This script takes a folder of 1 or more kml files (usually generated in Google Earth) and extracts the 
-#  spatial features, while preserving names, and saves as shapefiles.  
+#  spatial features, while preserving names, and then saves as shapefiles.  
 
 #  If the kml contains a combination of lines, polygons and/or points, the script will save the shapefiles 
 #  separately according to type.
 
-#  You need to input the path to the folder which contains kmls you wish to convert, the output folder 
-#  path, and the output name for shapefile.
+#  You need to input the path to the folder containing the kmls you wish to convert, as well as the output 
+#  folder path, and the output name for shapefile.
 
 #  Input folder containing kmls, e.g. "C:/Users/WP01/OneDrive - CEFAS/Temp"
 input_folder_path <- "C:/Users/YOUR_INPUT_FOLDER_PATH_HERE"
