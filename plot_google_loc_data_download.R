@@ -1,7 +1,7 @@
 #required packages
 library(jsonlite); library(sf); library(lubridate); library(zoo); library("rnaturalearth"); library("rnaturalearthdata"); library(ggplot2)
 
-x <- jsonlite::fromJSON("C:/Users/WP01/OneDrive - CEFAS/Temp/my_google_data/takeout-20191008T161813Z-001/Takeout/Location History/Location History.json")
+x <- jsonlite::fromJSON("<YOUR GOOGLE LOCATION DATA (JSON) FILEPATH HERE>.json")
 
 # extracting the locations dataframe
 loc = x$locations
@@ -51,7 +51,7 @@ p2 <- ggplot() +
                     ymax = 1.3) +
   theme_void()
 
-ggsave("C:/Users/WP01/OneDrive - CEFAS/Temp/my_google_data/map3.png", plot = p2, dpi=600, scale = 2.5)
+ggsave("<YOUR MAP OUTPUT LOCATION HERE>.png", plot = p2, dpi=600, scale = 2.5)
 
 ##can also creat interactive map with mapview
 #mapview::mapview(locations)
