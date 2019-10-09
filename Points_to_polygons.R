@@ -1,12 +1,13 @@
 ## points to polygon script
 
-# assumes points are in correct order for drawing polygon
+# assumes points are as a list in correct order for drawing polygons
 
 library(tidyverse)
 library(sf)
 
-
+# load data
 temp <- read.csv("<YOUR CSV FILE PATH HERE>.csv")
+
 # optional subset of data we require and removal of duplicates
 temp<- subset(temp, select = c("licence", "area_name", "lat", "long"))
 temp <- temp[!duplicated(temp),]
